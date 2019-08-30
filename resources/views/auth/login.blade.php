@@ -70,11 +70,19 @@
                     <hr>
                     <div class="form-group row mb-0">
                         <div class="col-md-8 offset-md-4">
-                            <a  class="btn btn-primary" href="login/github">
+                            <a  class="btn btn-dark" href="login/github">
                                 {{ __('Github') }}
                             </a>
+
+                            
+
+                            <a  class="btn btn-danger" href="login/google">
+                                {{ __('Google') }}
+                            </a>
                         </div>
+                        
                     </div>
+                   
                 </div>
             </div>
         </div>
