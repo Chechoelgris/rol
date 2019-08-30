@@ -10,16 +10,31 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                color: white;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
             }
-
+            .body-bg{
+                /* Ubicación de la imagen */
+                background-image: url(https://pyromaniacpress.files.wordpress.com/2017/11/drizzt_vs_demogorgon.jpg);
+                /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+                background-position: center center;
+                /* Para que la imagen de fondo no se repita */
+                background-repeat: no-repeat;
+                /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+                background-attachment: fixed;
+                /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+                background-size: cover;
+                /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+                background-color: black;
+    
+            }
             .full-height {
                 height: 100vh;
             }
@@ -49,7 +64,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #ffffff;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -63,17 +78,17 @@
             }
         </style>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
+    <body class="body-bg">
+        <div class="flex-center position-ref full-height body-bg">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">Ingresar</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}">Registro</a>
                         @endif
                     @endauth
                 </div>
@@ -81,17 +96,17 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    D&D Complements
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="#">Docs</a>
+                    <a href="#">Laracasts</a>
+                    <a href="#">News</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Nova</a>
+                    <a href="#">Forge</a>
+                    <a href="#">GitHub</a>
                 </div>
             </div>
         </div>
