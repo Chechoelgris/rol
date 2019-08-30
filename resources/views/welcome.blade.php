@@ -100,13 +100,12 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">Docs</a>
-                    <a href="#">Laracasts</a>
-                    <a href="#">News</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Nova</a>
-                    <a href="#">Forge</a>
-                    <a href="#">GitHub</a>
+                    <a href="#">Aventuras</a>
+                    <a href="#">Personajes</a>
+                    <a href="#">Diario</a>
+                    <a href="#">Manual</a>
+                    <a href="#">Proyecto</a>
+                    <a href="#">Comentarios</a>
                 </div>
             </div>
         </div>

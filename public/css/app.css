@@ -10674,3 +10674,7 @@ a.text-dark:focus {
   background-color: black;
 }
 
+.bg-dark-t {
+  background-color: rgba(11, 29, 24, 0.534);
+}
+
